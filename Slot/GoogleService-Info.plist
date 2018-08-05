@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>355774420707-7pf9sffr0rc4gu4qh66k9gomcrjt04fj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.355774420707-7pf9sffr0rc4gu4qh66k9gomcrjt04fj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHOvWqDlSl60ZpnVjDkrmGEsMZIBNf_Kw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>355774420707</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mahanthesh.Slot</string>
+	<key>PROJECT_ID</key>
+	<string>slot-eb776</string>
+	<key>STORAGE_BUCKET</key>
+	<string>slot-eb776.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:355774420707:ios:fdefc6733d2ab89c</string>
+	<key>DATABASE_URL</key>
+	<string>https://slot-eb776.firebaseio.com</string>
+</dict>
+</plist>
