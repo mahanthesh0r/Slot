@@ -16,16 +16,25 @@ class ViewController: UIViewController {
     
     
     @IBAction func LoginAction(_ sender: UIButton) {
+        view.endEditing(true)
+        ProgressHUD.show("Logging in..", interaction: false)
         if EmailTextField.text != "" && PasswordTextField.text != ""
         {
             Auth.auth().signIn(withEmail: EmailTextField.text!, password: PasswordTextField.text!) { (user, error) in
                 if user != nil
                 {
-                    print("Successfull")
+                    ProgressHUD.showSuccess("Successful!")
+                    self.performSegue(withIdentifier: "HomeSegue", sender: self)
                 }
                 else
                 {
-                  print("login failed")
+                  if let myError = error?.localizedDescription
+                  {
+                    ProgressHUD.showError(myError)
+                    }
+                  else {
+                    ProgressHUD.showError("Error Logging In")
+                    }
                 }
             }
             
@@ -37,6 +46,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //view.setGradientBackground(colorOne: Colors.brightOrange, colorTwo: Colors.orange)
         LoginButton.setGradientBackground(colorOne: Colors.brightOrange, colorTwo: Colors.orange)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
