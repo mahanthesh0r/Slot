@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -135,13 +136,36 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="audiCell" rowHeight="225" id="onG-pO-XFr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="audiCell" rowHeight="225" id="onG-pO-XFr" customClass="ImageCell" customModule="Slot" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="225"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="onG-pO-XFr" id="VHv-pA-EAn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-aQ-llo">
+                                                    <rect key="frame" x="20" y="11" width="374" height="173"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-hB-aRk">
+                                                    <rect key="frame" x="20" y="184" width="60" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="1sT-WD-mV1"/>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="trailing" secondItem="VHv-pA-EAn" secondAttribute="trailingMargin" id="ROX-XL-en5"/>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="top" secondItem="VHv-pA-EAn" secondAttribute="topMargin" id="WKW-cc-8K4"/>
+                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="bottom" secondItem="VHv-pA-EAn" secondAttribute="bottomMargin" id="cbr-Rw-UmI"/>
+                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="iN1-pv-dX9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GQb-hB-aRk" secondAttribute="bottom" id="wtS-h3-Btu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="VbL-aQ-llo" id="lJN-Hw-GqS"/>
+                                            <outlet property="txtLabel" destination="GQb-hB-aRk" id="ezZ-xW-UM2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

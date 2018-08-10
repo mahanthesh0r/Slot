@@ -21,6 +21,7 @@
 		FA53CB0D21161B17002B0C0D /* SlotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53CB0C21161B17002B0C0D /* SlotUITests.swift */; };
 		FA53CB1B21161C24002B0C0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA53CB1A21161C24002B0C0D /* GoogleService-Info.plist */; };
 		FA9C93DD211A2A61002EEB8C /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C93DC211A2A61002EEB8C /* Hall.swift */; };
+		FAF68617211CB85100F79268 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF68616211CB85000F79268 /* ImageCell.swift */; };
 		FAFBFFB42116C3BD00D417CD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFBFFB32116C3BD00D417CD /* UIView+Extension.swift */; };
 		FAFBFFB62116C67100D417CD /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFBFFB52116C67100D417CD /* ColorConstants.swift */; };
 		FAFBFFB821173E4A00D417CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFBFFB721173E4900D417CD /* HomeViewController.swift */; };
@@ -70,6 +71,7 @@
 		FA53CB0E21161B17002B0C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA53CB1A21161C24002B0C0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA9C93DC211A2A61002EEB8C /* Hall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall.swift; sourceTree = "<group>"; };
+		FAF68616211CB85000F79268 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		FAFBFFB32116C3BD00D417CD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FAFBFFB52116C67100D417CD /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		FAFBFFB721173E4900D417CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				FAFBFFB32116C3BD00D417CD /* UIView+Extension.swift */,
 				FAFBFFB52116C67100D417CD /* ColorConstants.swift */,
 				FA53CAF021161B0A002B0C0D /* Main.storyboard */,
+				FAF68616211CB85000F79268 /* ImageCell.swift */,
 				FA53CAF321161B17002B0C0D /* Assets.xcassets */,
 				FA53CAF521161B17002B0C0D /* LaunchScreen.storyboard */,
 				FA53CAF821161B17002B0C0D /* Info.plist */,
@@ -395,6 +398,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Slot/Pods-Slot-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -402,6 +406,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -422,6 +427,7 @@
 				FAFBFFB42116C3BD00D417CD /* UIView+Extension.swift in Sources */,
 				FA9C93DD211A2A61002EEB8C /* Hall.swift in Sources */,
 				FA53CAEF21161B0A002B0C0D /* ViewController.swift in Sources */,
+				FAF68617211CB85100F79268 /* ImageCell.swift in Sources */,
 				FA53CAED21161B0A002B0C0D /* AppDelegate.swift in Sources */,
 				FAFBFFB62116C67100D417CD /* ColorConstants.swift in Sources */,
 			);

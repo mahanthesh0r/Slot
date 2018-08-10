@@ -9,8 +9,9 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import Kingfisher
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var hall = [Hall]()
@@ -38,16 +39,18 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-}
-extension HomeViewController:UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return hall.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "audiCell", for: indexPath)
-        //cell.imageView?.image = hall[indexPath.row].imageUrl
-        cell.textLabel?.text = hall[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "audiCell", for: indexPath) as! ImageCell
+        //let imgUrl = URL(string: hall[indexPath.row].imageUrl)
+        let resource = ImageResource(downloadURL: URL(string: hall[indexPath.row].imageUrl)!, cacheKey: hall[indexPath.row].imageUrl)
+        cell.imgView?.kf.setImage(with: resource) 
+        cell.txtLabel?.text = hall[indexPath.row].name
         return cell
     }
+
 }
+
