@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.tableView.rowHeight = 200
         loadAudi()
         // Do any additional setup after loading the view.
         print(Auth.auth().currentUser?.email)

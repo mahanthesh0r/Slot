@@ -132,34 +132,35 @@
                                     <navigationItem title="Auditorium" id="dit-LW-hcD"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-2e-KSG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-2e-KSG">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="audiCell" rowHeight="225" id="onG-pO-XFr" customClass="ImageCell" customModule="Slot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="225"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="audiCell" rowHeight="250" id="onG-pO-XFr" customClass="ImageCell" customModule="Slot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="onG-pO-XFr" id="VHv-pA-EAn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="249.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-aQ-llo">
-                                                    <rect key="frame" x="20" y="11" width="374" height="173"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-aQ-llo">
+                                                    <rect key="frame" x="20" y="11" width="374" height="171.66666666666666"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-hB-aRk">
-                                                    <rect key="frame" x="20" y="184" width="60" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="19.999999999999996" y="207.66666666666666" width="61.666666666666657" height="31.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="1sT-WD-mV1"/>
-                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="trailing" secondItem="VHv-pA-EAn" secondAttribute="trailingMargin" id="ROX-XL-en5"/>
-                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="top" secondItem="VHv-pA-EAn" secondAttribute="topMargin" id="WKW-cc-8K4"/>
-                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="bottom" secondItem="VHv-pA-EAn" secondAttribute="bottomMargin" id="cbr-Rw-UmI"/>
-                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="iN1-pv-dX9"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="GQb-hB-aRk" secondAttribute="bottom" id="wtS-h3-Btu"/>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="9hJ-ir-GFb"/>
+                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="top" secondItem="VbL-aQ-llo" secondAttribute="bottom" constant="25" id="HIM-Ct-F0t"/>
+                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="leading" secondItem="VHv-pA-EAn" secondAttribute="leadingMargin" id="HVg-uT-OHq"/>
+                                                <constraint firstItem="GQb-hB-aRk" firstAttribute="bottom" secondItem="VHv-pA-EAn" secondAttribute="bottomMargin" id="a5D-g1-gSg"/>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="top" secondItem="VHv-pA-EAn" secondAttribute="topMargin" id="wTb-Zd-JJr"/>
+                                                <constraint firstItem="VbL-aQ-llo" firstAttribute="trailing" secondItem="VHv-pA-EAn" secondAttribute="trailingMargin" id="xF4-2E-89p"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
